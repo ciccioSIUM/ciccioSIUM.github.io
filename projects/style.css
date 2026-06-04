@@ -89,12 +89,6 @@ header {
     animation: apparizione 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-@keyframes apparizione {
-    0%   { transform: scale(0.3); opacity: 0; }
-    60%  { transform: scale(1.15); opacity: 1; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
 nav {
     width: 90%;
     max-width: 1200px;
@@ -313,11 +307,6 @@ main {
     animation: sali 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-@keyframes sali {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
 .riquadro-dettaglio {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(12px);
@@ -386,6 +375,17 @@ main {
     gap: 0.75rem;
     flex-wrap: wrap;
     margin-top: 0.5rem;
+}
+
+@keyframes apparizione {
+    0%   { transform: scale(0.3); opacity: 0; }
+    60%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes sali {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 1024px) {
