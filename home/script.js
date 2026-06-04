@@ -22,15 +22,15 @@ const cambiaCursore = cursoreNuovo => {
 const doveSiTrova = e => {
     const interattivo = e.target.closest("[data-cursore]")
     if (!interattivo){
-        cambiaCursore("/cursors/cursor-svgrepo-com.svg")
+        cambiaCursore("../cursors/cursor-svgrepo-com.svg")
         return
     } 
     switch(interattivo.dataset.cursore){
         case "mano":
-            cambiaCursore("/cursors/hand-pointer.svg")
+            cambiaCursore("../cursors/hand-pointer.svg")
             break
         case "scendi":
-            cambiaCursore("/cursors/puntator.svg")
+            cambiaCursore("../cursors/puntator.svg")
             break
         default:
             console.log("È stato rilevato un errore!")
