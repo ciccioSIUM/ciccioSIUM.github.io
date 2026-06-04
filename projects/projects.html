@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetti | Domenico Savino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="video-bg" src="../video_Backround.mp4" autoplay muted loop playsinline></video>
+    <div class="cursori">
+        <img src="../cursors/cursor-svgrepo-com.svg" alt="cursore" class="cursore">
+    </div>
+    <header>
+        <div class="contenitore">
+            <a href="../index.html" class="foto-profilo" data-cursore="mano">
+                <img src="../home/immagineFinale.png" alt="foto del mio Profilo" class="nav-foto-profilo">
+            </a>
+            <nav>
+                <ul data-cursore="mano">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="projects.html" class="attivo">Projects</a></li>
+                    <li><a href="../contact/contact.html">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenitore-progetti">
+            <div class="intestazione elemento">
+                <h3>PROJECTS</h3>
+                <p>A selection of things I've built — click a card to explore.</p>
+            </div>
+            <div id="griglia">
+                <div class="scheda elemento"
+                     data-github="https://github.com/abcdefghi123456778/Akinator-STEAM.git"
+                     data-sito="https://akinator-steam.pages.dev/"
+                     data-tecnologie="HTML, CSS, JavaScript"
+                     data-descrizione="Un gioco educativo in stile Akinator che sfida l'utente a pensare a un personaggio del mondo STEAM. Attraverso 18 domande binarie, l'algoritmo elimina progressivamente i 25 personaggi del database fino a indovinare chi hai in mente — il tutto accompagnato da una scheda informativa sul personaggio scoperto."
+                     data-titolo="Akinator-STEAM">
+                    <div class="scheda-immagine">
+                        <div class="segnaposto"><img src="lampada_logo.png" alt="logo Akinator-STEAM"></div>
+                    </div>
+                    <div class="scheda-contenuto">
+                        <h4>Akinator-STEAM</h4>
+                        <p>An Akinator-style educational game that challenges the user to think of a figure from the STEAM world. Through 18 binary questions, the algorithm progressively eliminates the 25 characters in the database until it guesses who you have in mind — all accompanied by a fact sheet about the revealed character.</p>
+                        <div class="etichette-tech">
+                            <span class="etichetta">HTML</span>
+                            <span class="etichetta">CSS</span>
+                            <span class="etichetta">JavaScript</span>
+                        </div>
+                        <div class="scheda-azioni">
+                            <button class="btn-dettaglio apri-dettaglio" data-cursore="mano">Details</button>
+                            <a class="btn-link" href="https://github.com/abcdefghi123456778/Akinator-STEAM.git" data-cursore="mano">GitHub</a>
+                            <a class="btn-link" href="https://akinator-steam.pages.dev/" data-cursore="mano">Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scheda elemento"
+                     data-github="https://github.com/crookeDog/GrumoAppula1-Agesci.git"
+                     data-sito="https://grumoappula1.com/"
+                     data-tecnologie="HTML, CSS, JavaScript"
+                     data-descrizione="This repository contains the source code for a web application or website related to Grumo Appula 1 - AGESCI. It includes interactive elements, informational pages, and potentially a game."
+                     data-titolo="Grumo Appula Website"
+                     data-immagine="">
+                    <div class="scheda-immagine">
+                        <div class="segnaposto"><img src="AGESCI.png" alt=""></div>
+                    </div>
+                    <div class="scheda-contenuto">
+                        <h4>Grumo Appula Website</h4>
+                        <p>This repository contains the source code for a web application or website related to Grumo Appula 1 - AGESCI. It includes interactive elements, informational pages, and potentially a game.</p>
+                        <div class="etichette-tech">
+                            <span class="etichetta">HTML</span>
+                            <span class="etichetta">CSS</span>
+                            <span class="etichetta">JavaScript</span>
+                        </div>
+                        <div class="scheda-azioni">
+                            <button class="btn-dettaglio apri-dettaglio">Details</button>
+                            <a class="btn-link" href="https://github.com/crookeDog/GrumoAppula1-Agesci.git">GitHub</a>
+                            <a class="btn-link" href="https://grumoappula1.com/" data-cursore="mano">Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dettaglio" style="display:none;">
+                <div class="riquadro-dettaglio">
+                    <div class="dettaglio-sinistra">
+                        <p class="etichetta-sezione">PROJECTS</p>
+                        <h2 id="dettaglio-titolo"></h2>
+                        <p id="dettaglio-descrizione"></p>
+                        <div class="sezione-tech">
+                            <h3 class="titolo-tech">TECHNOLOGIES USED</h3>
+                            <div id="dettaglio-etichette"></div>
+                        </div>
+                        <div class="dettaglio-azioni">
+                            <button id="btn-indietro" class="btn-link">Back</button>
+                            <a id="btn-github" href="#" class="btn-dettaglio">GitHub</a>
+                            <a id="btn-sito" href="#" class="btn-dettaglio" style="display:none;">Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
