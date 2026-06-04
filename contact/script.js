@@ -44,7 +44,7 @@ const osservatore = new IntersectionObserver(entries =>{
 )
 },
 {
-    threshold: 0.5,
+    threshold: 0.2,
 })
 
 elementi.forEach(elemento => {
