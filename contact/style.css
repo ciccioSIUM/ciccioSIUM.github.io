@@ -1,293 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    cursor: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	cursor: none;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
-html, body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    min-height: 100vh;
+html,
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	min-height: 100vh;
 }
 
 ::selection {
-    color: #fff;
-    background-color: #545454;
+	color: #fff;
+	background-color: #545454;
 }
 
 #video-bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    top: 0;
-    left: 0;
+	background-color: #000000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .cursori {
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 10000;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 500ms ease;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10000;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 500ms ease;
 }
 
 body:hover > .cursori {
-    opacity: 1;
+	opacity: 1;
 }
 
 .cursore {
-    transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
 }
 
 .cursore.cambia {
-    opacity: 0;
+	opacity: 0;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    margin-top: 1rem;
-    top: -1rem;
-    z-index: 9999;
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	margin-top: 1rem;
+	top: -1rem;
+	z-index: 9999;
 }
 
 .contenitore {
-    max-width: 75rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 0.938rem;
-    border: 4px solid #545454;
-    width: 100%;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
+	max-width: 75rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-radius: 0.938rem;
+	border: 4px solid #545454;
+	width: 100%;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
 }
 
 .foto-profilo {
-    padding-left: 2rem;
+	padding-left: 2rem;
 }
 
 .nav-foto-profilo {
-    border-radius: 50%;
-    border: 3px solid #545454;
-    width: 4rem;
-    height: 4rem;
-    object-fit: cover;
-    display: block;
-    animation: apparizione 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+	border-radius: 50%;
+	border: 3px solid #545454;
+	width: 4rem;
+	height: 4rem;
+	object-fit: cover;
+	display: block;
+	animation: apparizione 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 nav {
-    width: 90%;
-    max-width: 1200px;
-    height: 4rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+	width: 90%;
+	max-width: 1200px;
+	height: 4rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
+	list-style-type: none;
+	display: flex;
+	gap: 2rem;
 }
 
 ul a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: opacity 0.3s ease;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+	transition: opacity 0.3s ease;
 }
 
 ul a:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 ul a.attivo {
-    border-bottom: 2px solid #545454;
-    padding-bottom: 2px;
+	border-bottom: 2px solid #545454;
+	padding-bottom: 2px;
 }
 
 main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 2rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 2rem;
 }
 
 .contenitore-contact {
-    max-width: 50rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 0.938rem;
-    border: 4px solid #545454;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+	max-width: 50rem;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-radius: 0.938rem;
+	border: 4px solid #545454;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .sottotitolo {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    color: #aaa;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	color: #aaa;
 }
 
 .contenitore-contact h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(1.6rem, 4vw, 2.4rem);
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.25;
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(1.6rem, 4vw, 2.4rem);
+	font-weight: 800;
+	color: #fff;
+	line-height: 1.25;
 }
 
 .link-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    border-top: 1px solid #545454;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	border-top: 1px solid #545454;
 }
 
 .link-lista a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    color: #fff;
-    padding: 1.25rem 0;
-    border-bottom: 1px solid #545454;
-    transition: padding-left 0.3s ease, opacity 0.3s ease;
-    gap: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	color: #fff;
+	padding: 1.25rem 0;
+	border-bottom: 1px solid #545454;
+	transition:
+		padding-left 0.3s ease,
+		opacity 0.3s ease;
+	gap: 1rem;
 }
 
 .link-lista a:hover {
-    padding-left: 0.75rem;
-    opacity: 0.7;
+	padding-left: 0.75rem;
+	opacity: 0.7;
 }
 
 .etichetta-link {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    white-space: nowrap;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+	white-space: nowrap;
 }
 
 .descrizione-link {
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.55);
-    text-align: right;
+	font-family: "Inter", sans-serif;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.55);
+	text-align: right;
 }
 
 .foto-profilo-main {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #545454;
-    filter: drop-shadow(0 0 10px #545454);
-    align-self: flex-end;
-    transition: filter 0.4s ease, transform 0.4s ease;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #545454;
+	filter: drop-shadow(0 0 10px #545454);
+	align-self: flex-end;
+	transition:
+		filter 0.4s ease,
+		transform 0.4s ease;
 }
 
 .foto-profilo-main:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+	transform: scale(1.05);
+	filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
 }
 
 .elemento {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 0.8s ease;
 }
 
 .elemento.visibile {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 @keyframes apparizione {
-    0%   { transform: scale(0.3); opacity: 0; }
-    60%  { transform: scale(1.15); opacity: 1; }
-    100% { transform: scale(1); opacity: 1; }
+	0% {
+		transform: scale(0.3);
+		opacity: 0;
+	}
+	60% {
+		transform: scale(1.15);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .cursori {
-        display: none !important;
-    }
-    * {
-        cursor: auto !important;
-    }
+	.cursori {
+		display: none !important;
+	}
+	* {
+		cursor: auto !important;
+	}
 }
 
 @media (max-width: 768px) {
-    header {
-        margin-top: 0.5rem;
-        top: 0;
-    }
+	header {
+		margin-top: 0.5rem;
+		top: 0;
+	}
 
-    .contenitore {
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem 1rem;
-        gap: 1.5rem;
-    }
+	.contenitore {
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5rem 1rem;
+		gap: 1.5rem;
+	}
 
-    .foto-profilo {
-        padding-left: 0;
-    }
+	.foto-profilo {
+		padding-left: 0;
+	}
 
-    nav {
-        width: 100%;
-        justify-content: center;
-        height: auto;
-    }
+	nav {
+		width: 100%;
+		justify-content: center;
+		height: auto;
+	}
 
-    ul {
-        gap: 1.2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+	ul {
+		gap: 1.2rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-    ul a {
-        font-size: 1rem;
-    }
+	ul a {
+		font-size: 1rem;
+	}
 
-    .contenitore-contact {
-        padding: 2rem 1.5rem;
-        gap: 1.5rem;
-    }
+	.contenitore-contact {
+		padding: 2rem 1.5rem;
+		gap: 1.5rem;
+	}
 
-    .contenitore-contact h1 {
-        font-size: 1.5rem;
-    }
+	.contenitore-contact h1 {
+		font-size: 1.5rem;
+	}
 
-    .descrizione-link {
-        display: none;
-    }
+	.descrizione-link {
+		display: none;
+	}
 
-    .foto-profilo-main {
-        align-self: center;
-    }
+	.foto-profilo-main {
+		align-self: center;
+	}
 }
